@@ -1,15 +1,30 @@
 
-const pagos = document.getElementById("continuar")
+const pagos = document.querySelector("#continuar")
 pagos.addEventListener("click", function () {
-    window.localStorage.setItem('pago', 12343)
+    window.localStorage.setItem('pago', 1)
   })
+const boton = document.getElementById("boton1")
 
-  const tomaPago = localStorage.getItem("pagado")
+  const tomarPago = localStorage.getItem("pago")
+
+
   const pagado = () => {
-    if(tomaPago === "pago"){
-
-      location.href = "https://www.paramountplus.com/"
+    if(tomarPago === "1"){
+      boton.innerHTML +=
+      `<a href="./pages/inicio.html"><input class="boton1" type="button" value="Continuar Al Sitio"></a>`
+      pagos.innerHTML = " "
     }
   }
- 
+  if(tomarPago === "1"){
+    boton.innerHTML +=
+    `<a href="./pages/inicio.html"><input class="boton1" type="button" value="Continuar Al Sitio"></a>`
+    pagos.innerHTML = " "
+  }
+ const botonPagar = document.querySelector(".botonPago")
+
+ botonPagar.addEventListener("click", () => {
+
+  pagado()
+  
+ })
 
