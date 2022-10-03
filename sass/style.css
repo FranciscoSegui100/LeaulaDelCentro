@@ -207,6 +207,7 @@ a {
 #body #Redirecciones .h2 {
   -webkit-animation: bounce-top 2.5s both;
           animation: bounce-top 2.5s both;
+  color: #ffff;
 }
 
 #body #Redirecciones .logo {
@@ -305,6 +306,18 @@ a {
   font-size: 20px;
 }
 
+#body #Redirecciones .listaRedes #mas {
+  -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3.2s both;
+          animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3.2s both;
+  background-color: #9ADCFF;
+  color: #ffff;
+  padding: 25px;
+  border: solid 3px;
+  border-radius: 50px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+
 #pago {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,5 +382,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#pago #botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
 /*# sourceMappingURL=style.css.map */

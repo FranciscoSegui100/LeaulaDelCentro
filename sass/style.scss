@@ -25,7 +25,8 @@ a { text-decoration: none;
         align-content: center;
         align-items: center;
         .h2{
-            animation:bounce-top 2.5s both
+            animation:bounce-top 2.5s both;
+            color: map-get($estilos, color )
         }
         .logo{
             border-radius: 60px;
@@ -98,6 +99,16 @@ a { text-decoration: none;
                 font-family:'Indie Flower', cursive;
                 font-size: 20px;
             }
+            #mas{
+                animation:tracking-in-contract-bck-top 1s cubic-bezier(.215,.61,.355,1.000) 3.2s both;
+               background-color: map-get($estilos, bg-color3 );
+                color: map-get($estilos, color );
+                padding: 25px;
+                border: solid 3px;
+                border-radius: 50px;
+                font-family:'Indie Flower', cursive;
+                font-size: 20px;
+            }
             
         }
     }
@@ -140,6 +151,9 @@ a { text-decoration: none;
     color: #ffff;
     align-items: center;
     }
-    
+    #botones{
+        display: flex;
+        gap: 10px;
+    }
 }
 

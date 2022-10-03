@@ -1,24 +1,25 @@
 
 const pagos = document.querySelector("#continuar")
+const agradecimiento = document.querySelector("#agradecimiento")
+const info = document.querySelector("#info")
 pagos.addEventListener("click", function () {
-    window.localStorage.setItem('pago', 1)
+    window.localStorage.setItem('pago', 2)
   })
 const boton = document.getElementById("boton1")
 
   const tomarPago = localStorage.getItem("pago")
 
-
   const pagado = () => {
-    if(tomarPago === "1"){
-      boton.innerHTML +=
-      `<a href="./pages/inicio.html"><input class="boton1" type="button" value="Continuar Al Sitio"></a>`
+    if(tomarPago === "2"){
       pagos.innerHTML = " "
+      info.innerHTML = " "
+      agradecimiento.innerHTML = "<h2 id=pago>Muchas Gracias por tu colaboración!</h2>"
     }
   }
-  if(tomarPago === "1"){
-    boton.innerHTML +=
-    `<a href="./pages/inicio.html"><input class="boton1" type="button" value="Continuar Al Sitio"></a>`
+  if(tomarPago === "2"){
     pagos.innerHTML = " "
+    info.innerHTML = " "
+    agradecimiento.innerHTML = "<h2 id=pago>Muchas Gracias por tu colaboración!</h2>"
   }
  const botonPagar = document.querySelector(".botonPago")
 
